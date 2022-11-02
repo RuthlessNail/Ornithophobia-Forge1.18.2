@@ -1,5 +1,6 @@
 package com.RuthlessNail.ornithophobia;
 
+import com.RuthlessNail.ornithophobia.block.ModBlock;
 import com.RuthlessNail.ornithophobia.item.ModItems;
 import com.mojang.logging.LogUtils;
 import net.minecraft.world.level.block.Blocks;
@@ -23,7 +24,10 @@ public class Ornithophobia
     public Ornithophobia()
     {
         IEventBus eventBus = FMLJavaModLoadingContext.get().getModEventBus();
+
         ModItems.register(eventBus);
+        ModBlock.register(eventBus);
+
         eventBus.addListener(this::setup);
 
         // Register ourselves for server and other game events we are interested in

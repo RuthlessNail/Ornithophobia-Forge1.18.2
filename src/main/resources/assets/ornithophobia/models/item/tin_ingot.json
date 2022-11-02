@@ -1,6 +1,6 @@
 {
   "parent":"item/generated",
   "textures": {
-    "layer0": "ornithophobia:item/eyeball"
+    "layer0": "ornithophobia:item/tin_ingot"
   }
 }

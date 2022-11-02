@@ -1,3 +1,11 @@
 {
-  "item.ornithophobia.eyeball": "Eyeball"
+  "item.ornithophobia.eyeball": "Eyeball",
+  "item.ornithophobia.raw_tin": "Raw Tin",
+  "item.ornithophobia.tin_ingot": "Tin Ingot",
+
+  "block.ornithophobia.eyeball_block": "Eyeball Pile",
+  "block.ornithophobia.tin_ore": "Tin Ore",
+  "block.ornithophobia.deepslate_tin_ore": "Deepslate Tin Ore",
+
+  "itemGroup.ornithophobiatab": "Ornithophobia"
 }

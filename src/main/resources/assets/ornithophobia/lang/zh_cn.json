@@ -1,3 +1,12 @@
 {
-  "item.ornithophobia.eyeball": "眼球"
+  "item.ornithophobia.eyeball": "眼球",
+  "item.ornithophobia.raw_tin": "粗锡",
+  "item.ornithophobia.tin_ingot": "锡锭",
+
+  "block.ornithophobia.eyeball_block": "眼球堆",
+  "block.ornithophobia.tin_ore": "锡矿石",
+  "block.ornithophobia.deepslate_tin_ore": "深层铁矿石",
+
+
+  "itemGroup.ornithophobiatab": "恐鸟症"
 }
