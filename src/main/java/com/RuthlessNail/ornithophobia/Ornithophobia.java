@@ -21,6 +21,7 @@ import java.util.stream.Collectors;
 @Mod(Ornithophobia.MOD_ID)
 public class Ornithophobia
 {
+    //add a comment
     public static final String MOD_ID = "ornithophobia";
     // Directly reference a slf4j logger
     private static final Logger LOGGER = LogUtils.getLogger();
