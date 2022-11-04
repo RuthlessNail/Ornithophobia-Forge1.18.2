@@ -1,6 +1,6 @@
 {
   "parent":"item/handheld",
   "textures": {
-    "layer0": "ornithophobia:item/wooden_hammer"
+    "layer0": "ornithophobia:item/tin_pickaxe"
   }
 }

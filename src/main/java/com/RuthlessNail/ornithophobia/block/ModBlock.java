@@ -38,6 +38,11 @@ public class ModBlock {
             () -> new Block(BlockBehaviour.Properties.of(Material.STONE)
                     .strength(4.5f, 2.5f).sound(SoundType.STONE).requiresCorrectToolForDrops()), ModCreativeModeTab.ORNITHOPHOBIA_TAB);
 
+    public static final  RegistryObject<Block> TIN_BLOCK = registerBlock("tin_block",
+            () -> new Block(BlockBehaviour.Properties.of(Material.METAL)
+                    .strength(4f, 20f).sound(SoundType.METAL).requiresCorrectToolForDrops()), ModCreativeModeTab.ORNITHOPHOBIA_TAB);
+
+
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block, CreativeModeTab tab) {
         RegistryObject<T> toReturn = BLOCKS.register(name, block);
         registerBlockItem(name, toReturn, tab);

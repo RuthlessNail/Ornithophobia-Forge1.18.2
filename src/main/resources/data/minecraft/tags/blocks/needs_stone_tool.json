@@ -2,6 +2,7 @@
   "replace": false,
   "values": [
     "ornithophobia:tin_ore",
-    "ornithophobia:deepslate_tin_ore"
+    "ornithophobia:deepslate_tin_ore",
+    "ornithophobia:tin_block"
   ]
 }
