@@ -1,6 +1,7 @@
 package com.RuthlessNail.ornithophobia.block;
 
 import com.RuthlessNail.ornithophobia.Ornithophobia;
+import com.RuthlessNail.ornithophobia.block.custom.BlockWalkway;
 import com.RuthlessNail.ornithophobia.item.ModCreativeModeTab;
 import com.RuthlessNail.ornithophobia.item.ModItems;
 import net.minecraft.world.item.BlockItem;
@@ -24,6 +25,10 @@ public class ModBlock {
     public static final  RegistryObject<Block> EYEBALL_BLOCK = registerBlock("eyeball_block",
             () -> new Block(BlockBehaviour.Properties.of(Material.NETHER_WOOD)
                     .strength(0.5f).sound(SoundType.NETHER_WART)), ModCreativeModeTab.ORNITHOPHOBIA_TAB);
+
+    public static final  RegistryObject<Block> WALKWAY = registerBlock("walkway",
+            () -> new BlockWalkway(BlockBehaviour.Properties.of(Material.METAL)
+                    .strength(3f).sound(SoundType.METAL)), ModCreativeModeTab.ORNITHOPHOBIA_TAB);
 
     public static final  RegistryObject<Block> TIN_ORE = registerBlock("tin_ore",
             () -> new Block(BlockBehaviour.Properties.of(Material.STONE)

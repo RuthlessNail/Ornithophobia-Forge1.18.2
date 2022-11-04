@@ -2,10 +2,17 @@
   "item.ornithophobia.eyeball": "Eyeball",
   "item.ornithophobia.raw_tin": "Raw Tin",
   "item.ornithophobia.tin_ingot": "Tin Ingot",
+  "item.ornithophobia.wooden_hammer": "Wooden Hammer",
+  "item.ornithophobia.compacted_coal": "Compacted Coal",
 
   "block.ornithophobia.eyeball_block": "Eyeball Pile",
   "block.ornithophobia.tin_ore": "Tin Ore",
   "block.ornithophobia.deepslate_tin_ore": "Deepslate Tin Ore",
+  "block.ornithophobia.walkway": "Walkway",
+  "tooltip.ornithophobia.wooden_hammer.tooltip.shift": "\"§o Look at you all, look at you, §kplayer§r§o, they push you, you run, you hide, then they find you, threaten to smash your head in, then you run again. When would you stop running, §kplayer§r§o?\"",
+  "tooltip.ornithophobia.wooden_hammer.tooltip": "Click §4§l[SHIFT] §r to view more",
+  "tooltip.ornithophobia.compacted_coal.tooltip": "§oThis little fella can last four time longer than non-compacted coal!",
 
   "itemGroup.ornithophobiatab": "Ornithophobia"
+
 }
