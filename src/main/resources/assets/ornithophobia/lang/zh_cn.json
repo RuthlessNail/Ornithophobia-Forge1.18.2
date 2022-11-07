@@ -11,11 +11,18 @@
   "item.ornithophobia.tin_shovel":"锡铲",
   "item.ornithophobia.tin_hoe":"锡锄",
 
+  "item.ornithophobia.tin_helmet":"锡头盔",
+  "item.ornithophobia.tin_chestplate":"锡胸甲",
+  "item.ornithophobia.tin_leggings":"锡护腿",
+  "item.ornithophobia.tin_boots":"锡靴子",
+
   "block.ornithophobia.eyeball_block": "眼球堆",
   "block.ornithophobia.tin_ore": "锡矿石",
   "block.ornithophobia.deepslate_tin_ore": "深层锡矿石",
   "block.ornithophobia.walkway": "加速路径",
   "block.ornithophobia.tin_block":"锡块",
+  "block.ornithophobia.eye_rose":"眼玫",
+  "block.ornithophobia.potted_eye_rose":"眼玫盆栽",
 
 
   "tooltip.ornithophobia.wooden_hammer.tooltip.shift": "§o“看看你们，看看你，§kplayer§r§o，祂们追你，你便跑，便藏，然后祂们找到了你，威胁砸烂你的头颅，你便又跑。你什么时候才会停下来，§kplayer§r§o?”",

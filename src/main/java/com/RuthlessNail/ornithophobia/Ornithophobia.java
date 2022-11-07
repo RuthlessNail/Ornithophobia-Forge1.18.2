@@ -2,8 +2,13 @@ package com.RuthlessNail.ornithophobia;
 
 import com.RuthlessNail.ornithophobia.block.ModBlock;
 import com.RuthlessNail.ornithophobia.item.ModItems;
+import com.RuthlessNail.ornithophobia.painting.ModPaintings;
 import com.mojang.logging.LogUtils;
+import net.minecraft.client.renderer.ItemBlockRenderTypes;
+import net.minecraft.client.renderer.RenderType;
+import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
+import net.minecraft.world.level.block.FlowerPotBlock;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.fml.common.Mod;
@@ -27,18 +32,27 @@ public class Ornithophobia
 
         ModItems.register(eventBus);
         ModBlock.register(eventBus);
+        ModPaintings.register(eventBus);
 
+        eventBus.addListener(this::clientSetup);
         eventBus.addListener(this::setup);
 
         // Register ourselves for server and other game events we are interested in
         MinecraftForge.EVENT_BUS.register(this);
     }
 
+
+    private void clientSetup(final  FMLCommonSetupEvent event){
+        ItemBlockRenderTypes.setRenderLayer(ModBlock.EYE_ROSE.get(), RenderType.cutout());
+        ItemBlockRenderTypes.setRenderLayer(ModBlock.POTTED_EYE_ROSE.get(), RenderType.cutout());
+    }
+
+
     private void setup(final FMLCommonSetupEvent event)
     {
-        // some preinit code
-        LOGGER.info("HELLO FROM PREINIT");
-        LOGGER.info("DIRT BLOCK >> {}", Blocks.DIRT.getRegistryName());
+        event.enqueueWork(() -> {
+            ((FlowerPotBlock) Blocks.FLOWER_POT).addPlant(ModBlock.EYE_ROSE.getId(), ModBlock.POTTED_EYE_ROSE);
+        });
     }
 
 }

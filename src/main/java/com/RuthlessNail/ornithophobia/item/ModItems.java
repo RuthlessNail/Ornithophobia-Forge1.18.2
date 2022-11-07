@@ -3,10 +3,8 @@ package com.RuthlessNail.ornithophobia.item;
 import com.RuthlessNail.ornithophobia.Ornithophobia;
 import com.RuthlessNail.ornithophobia.item.custom.ItemCompactedCoal;
 import com.RuthlessNail.ornithophobia.item.custom.ItemWoodenHammer;
-import net.minecraft.world.item.Item;
-import net.minecraft.world.item.PickaxeItem;
-import net.minecraft.world.item.ShovelItem;
-import net.minecraft.world.item.SwordItem;
+import net.minecraft.world.entity.EquipmentSlot;
+import net.minecraft.world.item.*;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
@@ -41,11 +39,25 @@ public class ModItems {
             () -> new ShovelItem(ModTiers.TIN,0.5f,-3,
                     new Item.Properties().tab(ModCreativeModeTab.ORNITHOPHOBIA_TAB)));
     public static final RegistryObject<Item> TIN_AXE = ITEMS.register("tin_axe",
-            () -> new SwordItem(ModTiers.TIN,6,-3.1f,
+            () -> new AxeItem(ModTiers.TIN,6,-3.1f,
                     new Item.Properties().tab(ModCreativeModeTab.ORNITHOPHOBIA_TAB)));
     public static final RegistryObject<Item> TIN_HOE = ITEMS.register("tin_hoe",
-            () -> new SwordItem(ModTiers.TIN,0,-3f,
+            () -> new HoeItem(ModTiers.TIN,0,-3f,
                     new Item.Properties().tab(ModCreativeModeTab.ORNITHOPHOBIA_TAB)));
+
+    public static final RegistryObject<Item> TIN_HELMET = ITEMS.register("tin_helmet",
+            () -> new ArmorItem(ModArmorMaterials.TIN, EquipmentSlot.HEAD,
+                    new Item.Properties().tab(ModCreativeModeTab.ORNITHOPHOBIA_TAB)));
+    public static final RegistryObject<Item> TIN_CHESTPLATE = ITEMS.register("tin_chestplate",
+            () -> new ArmorItem(ModArmorMaterials.TIN, EquipmentSlot.CHEST,
+                    new Item.Properties().tab(ModCreativeModeTab.ORNITHOPHOBIA_TAB)));
+    public static final RegistryObject<Item> TIN_LEGGINGS = ITEMS.register("tin_leggings",
+            () -> new ArmorItem(ModArmorMaterials.TIN, EquipmentSlot.LEGS,
+                    new Item.Properties().tab(ModCreativeModeTab.ORNITHOPHOBIA_TAB)));
+    public static final RegistryObject<Item> TIN_BOOTS = ITEMS.register("tin_boots",
+            () -> new ArmorItem(ModArmorMaterials.TIN, EquipmentSlot.FEET,
+                    new Item.Properties().tab(ModCreativeModeTab.ORNITHOPHOBIA_TAB)));
+
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);

@@ -4,11 +4,11 @@ import com.RuthlessNail.ornithophobia.Ornithophobia;
 import com.RuthlessNail.ornithophobia.block.custom.BlockWalkway;
 import com.RuthlessNail.ornithophobia.item.ModCreativeModeTab;
 import com.RuthlessNail.ornithophobia.item.ModItems;
+import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.Item;
-import net.minecraft.world.level.block.Block;
-import net.minecraft.world.level.block.SoundType;
+import net.minecraft.world.level.block.*;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.material.Material;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -42,6 +42,18 @@ public class ModBlock {
             () -> new Block(BlockBehaviour.Properties.of(Material.METAL)
                     .strength(4f, 20f).sound(SoundType.METAL).requiresCorrectToolForDrops()), ModCreativeModeTab.ORNITHOPHOBIA_TAB);
 
+    public static final  RegistryObject<Block> EYE_ROSE = registerBlock("eye_rose",
+            () -> new FlowerBlock(MobEffects.BLINDNESS, 8, BlockBehaviour.Properties.copy(Blocks.DANDELION)
+                    .noOcclusion()), ModCreativeModeTab.ORNITHOPHOBIA_TAB);
+
+    public static final  RegistryObject<Block> POTTED_EYE_ROSE = registerBlockWithoutBlockItem("potted_eye_rose",
+            () -> new FlowerPotBlock(null, ModBlock.EYE_ROSE, BlockBehaviour.Properties.copy(Blocks.POTTED_DANDELION)
+                    .noOcclusion()));
+
+
+    private static <T extends Block> RegistryObject<T> registerBlockWithoutBlockItem(String name, Supplier<T> block) {
+        return BLOCKS.register(name, block);
+    }
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block, CreativeModeTab tab) {
         RegistryObject<T> toReturn = BLOCKS.register(name, block);

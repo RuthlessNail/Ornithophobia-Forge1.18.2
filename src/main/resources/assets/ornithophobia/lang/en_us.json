@@ -11,11 +11,18 @@
   "item.ornithophobia.tin_shovel":"Tin Shovel",
   "item.ornithophobia.tin_hoe":"Tin Hoe",
 
+  "item.ornithophobia.tin_helmet":"Tin Helmet",
+  "item.ornithophobia.tin_chestplate":"Tin Chestplate",
+  "item.ornithophobia.tin_leggings":"Tin Leggings",
+  "item.ornithophobia.tin_boots":"Tin Boots",
+
   "block.ornithophobia.eyeball_block": "Eyeball Pile",
   "block.ornithophobia.tin_ore": "Tin Ore",
   "block.ornithophobia.deepslate_tin_ore": "Deepslate Tin Ore",
   "block.ornithophobia.walkway": "Walkway",
   "block.ornithophobia.tin_block":"Tin Block",
+  "block.ornithophobia.eye_rose":"Eye Rose",
+  "block.ornithophobia.potted_eye_rose":"Potted Eye Rose",
 
 
   "tooltip.ornithophobia.wooden_hammer.tooltip.shift": "\"§o Look at you all, look at you, §kplayer§r§o, they push you, you run, you hide, then they find you, threaten to smash your head in, then you run again. When would you stop running, §kplayer§r§o?\"",
