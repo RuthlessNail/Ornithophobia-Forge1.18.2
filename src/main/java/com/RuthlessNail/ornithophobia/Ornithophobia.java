@@ -3,6 +3,7 @@ package com.RuthlessNail.ornithophobia;
 import com.RuthlessNail.ornithophobia.block.ModBlock;
 import com.RuthlessNail.ornithophobia.item.ModItems;
 import com.RuthlessNail.ornithophobia.painting.ModPaintings;
+import com.RuthlessNail.ornithophobia.sound.ModSounds;
 import com.mojang.logging.LogUtils;
 import net.minecraft.client.renderer.ItemBlockRenderTypes;
 import net.minecraft.client.renderer.RenderType;
@@ -33,6 +34,7 @@ public class Ornithophobia
         ModItems.register(eventBus);
         ModBlock.register(eventBus);
         ModPaintings.register(eventBus);
+        ModSounds.register(eventBus);
 
         eventBus.addListener(this::clientSetup);
         eventBus.addListener(this::setup);

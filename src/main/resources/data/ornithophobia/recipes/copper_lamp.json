@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "#R#",
+    "RXR",
+    "#R#"
+  ],
+  "key": {
+    "#": {
+      "item": "minecraft:copper_ingot"
+    },
+    "X": {
+      "tag": "minecraft:glowstone"
+    }
+  },
+  "R": {
+    "tag": "minecraft:redstone_dust"
+  },
+
+  "result": {
+    "item": "ornithophobia:copper_lamp"
+  }
+}

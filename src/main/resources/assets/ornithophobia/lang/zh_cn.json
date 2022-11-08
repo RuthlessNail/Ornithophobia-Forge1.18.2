@@ -21,12 +21,13 @@
   "block.ornithophobia.deepslate_tin_ore": "深层锡矿石",
   "block.ornithophobia.walkway": "加速路径",
   "block.ornithophobia.tin_block":"锡块",
+  "block.ornithophobia.copper_lamp":"铜灯",
   "block.ornithophobia.eye_rose":"眼玫",
   "block.ornithophobia.potted_eye_rose":"眼玫盆栽",
 
 
-  "tooltip.ornithophobia.wooden_hammer.tooltip.shift": "§o“看看你们，看看你，§kplayer§r§o，祂们追你，你便跑，便藏，然后祂们找到了你，威胁砸烂你的头颅，你便又跑。你什么时候才会停下来，§kplayer§r§o?”",
-  "tooltip.ornithophobia.wooden_hammer.tooltip": "点击§4§l[SHIFT] §r来查看信息",
+  "tooltip.ornithophobia.wooden_hammer.tooltip": "§o“看看你们，看看你，§kplayer§r§o，祂们追你，你便跑，便藏，然后祂们找到了你，威胁砸烂你的头颅，你便又跑。你什么时候才会停下来，§kplayer§r§o?”",
+  "tooltip.ornithophobia.shift.tooltip": "点击§4§l[SHIFT] §r来查看信息",
   "tooltip.ornithophobia.compacted_coal.tooltip": "§o这个小玩意的燃烧时间高达普通煤炭的四倍！",
 
 

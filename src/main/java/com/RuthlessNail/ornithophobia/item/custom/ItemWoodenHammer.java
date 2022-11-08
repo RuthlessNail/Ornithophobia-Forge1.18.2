@@ -36,10 +36,10 @@ public class ItemWoodenHammer extends Item {
     @Override
     public void appendHoverText(ItemStack pStack, @Nullable Level pLevel, List<Component> pTooltipComponents, TooltipFlag pIsAdvanced) {
         if(Screen.hasShiftDown()) {
-            pTooltipComponents.add(new TranslatableComponent("tooltip.ornithophobia.wooden_hammer.tooltip.shift"));
+            pTooltipComponents.add(new TranslatableComponent("tooltip.ornithophobia.wooden_hammer.tooltip"));
         }
         else {
-            pTooltipComponents.add(new TranslatableComponent("tooltip.ornithophobia.wooden_hammer.tooltip"));
+            pTooltipComponents.add(new TranslatableComponent("tooltip.ornithophobia.shift.tooltip"));
         }
     }
 

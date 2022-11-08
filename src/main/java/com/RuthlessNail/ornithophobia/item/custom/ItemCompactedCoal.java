@@ -22,6 +22,9 @@ public class ItemCompactedCoal extends Item {
         if (Screen.hasShiftDown()) {
             pTooltipComponents.add(new TranslatableComponent("tooltip.ornithophobia.compacted_coal.tooltip"));
         }
+        else {
+            pTooltipComponents.add(new TranslatableComponent("tooltip.ornithophobia.shift.tooltip"));
+        }
     }
 
     @Override

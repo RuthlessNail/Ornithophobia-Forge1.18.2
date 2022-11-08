@@ -1,6 +1,7 @@
 package com.RuthlessNail.ornithophobia.block;
 
 import com.RuthlessNail.ornithophobia.Ornithophobia;
+import com.RuthlessNail.ornithophobia.block.custom.BlockCopperLamp;
 import com.RuthlessNail.ornithophobia.block.custom.BlockWalkway;
 import com.RuthlessNail.ornithophobia.item.ModCreativeModeTab;
 import com.RuthlessNail.ornithophobia.item.ModItems;
@@ -50,6 +51,9 @@ public class ModBlock {
             () -> new FlowerPotBlock(null, ModBlock.EYE_ROSE, BlockBehaviour.Properties.copy(Blocks.POTTED_DANDELION)
                     .noOcclusion()));
 
+    public static final  RegistryObject<Block> COPPER_LAMP = registerBlock("copper_lamp",
+            () -> new BlockCopperLamp(BlockBehaviour.Properties.of(Material.METAL).strength(2f).requiresCorrectToolForDrops().
+                    lightLevel((state) -> state.getValue(BlockCopperLamp.CLICKED) ? 15:0)), ModCreativeModeTab.ORNITHOPHOBIA_TAB);
 
     private static <T extends Block> RegistryObject<T> registerBlockWithoutBlockItem(String name, Supplier<T> block) {
         return BLOCKS.register(name, block);
