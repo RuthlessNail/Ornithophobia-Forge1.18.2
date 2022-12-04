@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "planks",
+  "ingredients": [
+    {
+      "tag": "ornithophobia:flesh_logs"
+    }
+  ],
+  "result": {
+    "item": "ornithophobia:strange_flesh",
+    "count": 4
+  }
+}

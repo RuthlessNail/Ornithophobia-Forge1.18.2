@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "bark",
+  "pattern": [
+    "##",
+    "##"
+  ],
+  "key": {
+    "#": {
+      "item": "ornithophobia:flesh_log"
+    }
+  },
+  "result": {
+    "item": "ornithophobia:flesh_wood",
+    "count": 3
+  }
+}

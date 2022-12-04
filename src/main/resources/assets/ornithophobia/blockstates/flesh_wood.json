@@ -1,0 +1,18 @@
+
+{
+  "variants": {
+    "axis=x": {
+      "model": "ornithophobia:block/flesh_wood",
+      "x": 90,
+      "y": 90
+    },
+    "axis=y": {
+      "model": "ornithophobia:block/flesh_wood"
+    },
+    "axis=z": {
+      "model": "ornithophobia:block/flesh_wood",
+      "x": 90
+    }
+  }
+}
+

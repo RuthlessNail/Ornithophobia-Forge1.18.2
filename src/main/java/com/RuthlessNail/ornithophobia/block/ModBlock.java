@@ -3,6 +3,7 @@ package com.RuthlessNail.ornithophobia.block;
 import com.RuthlessNail.ornithophobia.Ornithophobia;
 import com.RuthlessNail.ornithophobia.block.custom.BlockCopperLamp;
 import com.RuthlessNail.ornithophobia.block.custom.BlockWalkway;
+import com.RuthlessNail.ornithophobia.block.custom.ModFlammableRotatedPillarBlock;
 import com.RuthlessNail.ornithophobia.item.ModCreativeModeTab;
 import com.RuthlessNail.ornithophobia.item.ModItems;
 import net.minecraft.world.effect.MobEffects;
@@ -54,6 +55,20 @@ public class ModBlock {
     public static final  RegistryObject<Block> COPPER_LAMP = registerBlock("copper_lamp",
             () -> new BlockCopperLamp(BlockBehaviour.Properties.of(Material.METAL).strength(2f).requiresCorrectToolForDrops().
                     lightLevel((state) -> state.getValue(BlockCopperLamp.CLICKED) ? 15:0)), ModCreativeModeTab.ORNITHOPHOBIA_TAB);
+
+    public static final  RegistryObject<Block> FLESH_LOG = registerBlock("flesh_log",
+            () -> new ModFlammableRotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.OAK_LOG)),
+            ModCreativeModeTab.ORNITHOPHOBIA_TAB);
+    public static final  RegistryObject<Block> FLESH_WOOD = registerBlock("flesh_wood",
+            () -> new ModFlammableRotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.OAK_WOOD)),
+            ModCreativeModeTab.ORNITHOPHOBIA_TAB);
+    public static final  RegistryObject<Block> STRIPPED_FLESH_WOOD = registerBlock("stripped_flesh_wood",
+            () -> new ModFlammableRotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.STRIPPED_OAK_WOOD)),
+            ModCreativeModeTab.ORNITHOPHOBIA_TAB);
+    public static final  RegistryObject<Block> STRIPPED_FLESH_LOG = registerBlock("stripped_flesh_log",
+            () -> new ModFlammableRotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.STRIPPED_OAK_LOG)),
+            ModCreativeModeTab.ORNITHOPHOBIA_TAB);
+
 
     private static <T extends Block> RegistryObject<T> registerBlockWithoutBlockItem(String name, Supplier<T> block) {
         return BLOCKS.register(name, block);
