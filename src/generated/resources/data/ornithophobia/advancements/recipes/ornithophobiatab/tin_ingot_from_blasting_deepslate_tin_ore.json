@@ -1,0 +1,34 @@
+{
+  "parent": "ornithophobia:recipes/root",
+  "rewards": {
+    "recipes": [
+      "ornithophobia:tin_ingot_from_blasting_deepslate_tin_ore"
+    ]
+  },
+  "criteria": {
+    "has_deepslate_tin_ore": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "ornithophobia:deepslate_tin_ore"
+            ]
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "ornithophobia:tin_ingot_from_blasting_deepslate_tin_ore"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_deepslate_tin_ore",
+      "has_the_recipe"
+    ]
+  ]
+}

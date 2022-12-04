@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:campfire_cooking",
+  "ingredient": {
+    "item": "ornithophobia:strange_flesh"
+  },
+  "result": "ornithophobia:cooked_strange_flesh",
+  "experience": 0.35,
+  "cookingtime": 600
+}

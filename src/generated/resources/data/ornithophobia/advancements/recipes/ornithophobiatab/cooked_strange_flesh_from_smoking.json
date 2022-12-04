@@ -1,0 +1,34 @@
+{
+  "parent": "ornithophobia:recipes/root",
+  "rewards": {
+    "recipes": [
+      "ornithophobia:cooked_strange_flesh_from_smoking"
+    ]
+  },
+  "criteria": {
+    "has_strange_flesh": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "ornithophobia:strange_flesh"
+            ]
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "ornithophobia:cooked_strange_flesh_from_smoking"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_strange_flesh",
+      "has_the_recipe"
+    ]
+  ]
+}

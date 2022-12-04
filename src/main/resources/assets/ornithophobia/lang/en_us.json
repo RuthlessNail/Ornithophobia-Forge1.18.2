@@ -25,10 +25,21 @@
   "block.ornithophobia.eye_rose":"Eye Rose",
   "block.ornithophobia.potted_eye_rose":"Potted Eye Rose",
 
+  "block.ornithophobia.flesh_log":"Flesh Log",
+  "block.ornithophobia.flesh_wood":"Flesh Wood",
+  "block.ornithophobia.stripped_flesh_log":"Skinless Flesh Log",
+  "block.ornithophobia.stripped_flesh_wood":"Skinless Flesh Wood",
+  "item.ornithophobia.strange_flesh":"Strange Flesh",
+  "item.ornithophobia.cooked_strange_flesh":"Cooked Strange Flesh",
+
+
 
   "tooltip.ornithophobia.wooden_hammer.tooltip": "\"§o Look at you all, look at you, §kplayer§r§o, they push you, you run, you hide, then they find you, threaten to smash your head in, then you run again. When would you stop running, §kplayer§r§o?\"",
-  "tooltip.ornithophobia.shift.tooltip": "Click §4§l[SHIFT] §r to view more",
+  "tooltip.ornithophobia.shift.tooltip": "Press §4§l[SHIFT]§r to inspect",
   "tooltip.ornithophobia.compacted_coal.tooltip": "§oThis little fella can last four time longer than non-compacted coal!",
+  "tooltip.ornithophobia.eyeball.tooltip": "§oThis wretched eye, detached from it's host, yet still twitching violently, staring at you, unnervingly...",
+  "tooltip.ornithophobia.strange_flesh.tooltip": "§o\"Is this even edible?\", you may question. That is a good question, real good...",
+  "tooltip.ornithophobia.cooked_flesh.tooltip": "§oLooks a lot more edible, taste better too! It taste like chicken... Well, rotting chicken, but it taste like chicken nonetheless!",
 
   "itemGroup.ornithophobiatab": "Ornithophobia"
 

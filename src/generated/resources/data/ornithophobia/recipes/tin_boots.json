@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "X X",
+    "X X"
+  ],
+  "key": {
+    "X": {
+      "item": "ornithophobia:tin_ingot"
+    }
+  },
+  "result": {
+    "item": "ornithophobia:tin_boots"
+  }
+}

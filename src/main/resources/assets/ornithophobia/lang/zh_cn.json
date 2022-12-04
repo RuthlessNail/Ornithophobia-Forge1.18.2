@@ -25,10 +25,20 @@
   "block.ornithophobia.eye_rose":"眼玫",
   "block.ornithophobia.potted_eye_rose":"眼玫盆栽",
 
+  "block.ornithophobia.flesh_log":"血肉原木",
+  "block.ornithophobia.flesh_wood":"血肉木头",
+  "block.ornithophobia.stripped_flesh_log":"剥皮血肉原木",
+  "block.ornithophobia.stripped_flesh_wood":"剥皮血肉木头",
+  "item.ornithophobia.strange_flesh":"奇异血肉",
+  "item.ornithophobia.cooked_strange_flesh":"奇异熟肉",
+
 
   "tooltip.ornithophobia.wooden_hammer.tooltip": "§o“看看你们，看看你，§kplayer§r§o，祂们追你，你便跑，便藏，然后祂们找到了你，威胁砸烂你的头颅，你便又跑。你什么时候才会停下来，§kplayer§r§o?”",
-  "tooltip.ornithophobia.shift.tooltip": "点击§4§l[SHIFT] §r来查看信息",
+  "tooltip.ornithophobia.shift.tooltip": "按§4§l[SHIFT]§r以检视",
   "tooltip.ornithophobia.compacted_coal.tooltip": "§o这个小玩意的燃烧时间高达普通煤炭的四倍！",
+  "tooltip.ornithophobia.eyeball.tooltip": "§o这憎恶之物，即使早已与它主人的躯体分离，仍在愤怒地蠕动，不安地注视着你...",
+  "tooltip.ornithophobia.strange_flesh.tooltip": "§o“这能吃吗？”，你可能会问，我只能说这是个好问题，很好的问题...",
+  "tooltip.ornithophobia.cooked_flesh.tooltip": "§o看起来更能吃了，吃起来也是！这肉吃起来味道像鸡... 逐渐腐烂的鸡，但那也算鸡！",
 
 
   "itemGroup.ornithophobiatab": "恐鸟症"

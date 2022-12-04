@@ -10,13 +10,12 @@
       "item": "minecraft:copper_ingot"
     },
     "X": {
-      "tag": "minecraft:glowstone"
+      "item": "minecraft:glowstone"
+    },
+    "R": {
+      "item": "minecraft:redstone"
     }
   },
-  "R": {
-    "tag": "minecraft:redstone_dust"
-  },
-
   "result": {
     "item": "ornithophobia:copper_lamp"
   }

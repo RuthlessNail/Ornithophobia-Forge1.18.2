@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:smelting",
+  "ingredient": {
+    "item": "ornithophobia:strange_flesh"
+  },
+  "result": "minecraft:cooked_strange_flesh",
+  "experience": 0.35,
+  "cookingtime": 200
+}

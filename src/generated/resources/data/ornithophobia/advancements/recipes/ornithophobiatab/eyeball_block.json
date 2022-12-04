@@ -1,0 +1,34 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "ornithophobia:eyeball_block"
+    ]
+  },
+  "criteria": {
+    "has_eyeball": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "ornithophobia:eyeball"
+            ]
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "ornithophobia:eyeball_block"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_eyeball",
+      "has_the_recipe"
+    ]
+  ]
+}
