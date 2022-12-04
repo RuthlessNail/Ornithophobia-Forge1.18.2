@@ -30,9 +30,8 @@ public class BlockCopperLamp extends Block {
         if (!pLevel.isClientSide() && pHand == InteractionHand.MAIN_HAND) {
             boolean currentState = pState.getValue(CLICKED);
             pLevel.setBlock(pPos, pState.setValue(CLICKED,!currentState), 3);
-            pLevel.playSound(pPlayer, pPos, LEVER_CLICK, SoundSource.BLOCKS, 1f, 1f);
         }
-
+        pLevel.playSound(pPlayer, pPos, LEVER_CLICK, SoundSource.BLOCKS, 1f, 1f);
         return InteractionResult.SUCCESS;
 
     }
