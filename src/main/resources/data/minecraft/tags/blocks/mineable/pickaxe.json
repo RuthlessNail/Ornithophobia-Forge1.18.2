@@ -3,6 +3,8 @@
   "values": [
     "ornithophobia:tin_ore",
     "ornithophobia:deepslate_tin_ore",
-    "ornithophobia:tin_block"
+    "ornithophobia:tin_block",
+    "ornithophobia:titanium_block",
+    "ornithophobia:deepslate_titanium_ore"
   ]
 }

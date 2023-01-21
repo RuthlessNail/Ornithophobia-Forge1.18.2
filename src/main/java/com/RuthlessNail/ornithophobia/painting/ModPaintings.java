@@ -25,6 +25,14 @@ public class ModPaintings {
             PAINTING_MOTIVES.register("scholar", () -> new Motive(48,64));
     public static final RegistryObject<Motive> DUEL =
             PAINTING_MOTIVES.register("duel", () -> new Motive(64,48));
+    public static final RegistryObject<Motive> PLAYER_SANCTION =
+            PAINTING_MOTIVES.register("player_sanction", () -> new Motive(32,32));
+    public static final RegistryObject<Motive> PROFANITY =
+            PAINTING_MOTIVES.register("profanity", () -> new Motive(16,32));
+    public static final RegistryObject<Motive> HOTEL =
+            PAINTING_MOTIVES.register("hotel", () -> new Motive(16,16));
+    public static final RegistryObject<Motive> PIPE =
+            PAINTING_MOTIVES.register("pipe", () -> new Motive(16,16));
 
     public static void register(IEventBus eventBus) {
         PAINTING_MOTIVES.register(eventBus);

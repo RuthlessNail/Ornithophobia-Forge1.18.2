@@ -6,12 +6,17 @@ import com.RuthlessNail.ornithophobia.block.custom.BlockWalkway;
 import com.RuthlessNail.ornithophobia.block.custom.ModFlammableRotatedPillarBlock;
 import com.RuthlessNail.ornithophobia.item.ModCreativeModeTab;
 import com.RuthlessNail.ornithophobia.item.ModItems;
+import com.RuthlessNail.ornithophobia.world.feature.tree.FleshTreeGrower;
+import net.minecraft.core.BlockPos;
+import net.minecraft.core.Direction;
 import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.Item;
+import net.minecraft.world.level.BlockGetter;
 import net.minecraft.world.level.block.*;
 import net.minecraft.world.level.block.state.BlockBehaviour;
+import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.material.Material;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
@@ -38,11 +43,23 @@ public class ModBlock {
 
     public static final  RegistryObject<Block> DEEPSLATE_TIN_ORE = registerBlock("deepslate_tin_ore",
             () -> new Block(BlockBehaviour.Properties.of(Material.STONE)
-                    .strength(4.5f, 2.5f).sound(SoundType.STONE).requiresCorrectToolForDrops()), ModCreativeModeTab.ORNITHOPHOBIA_TAB);
+                    .strength(4.5f, 2.5f).sound(SoundType.DEEPSLATE).requiresCorrectToolForDrops()), ModCreativeModeTab.ORNITHOPHOBIA_TAB);
 
     public static final  RegistryObject<Block> TIN_BLOCK = registerBlock("tin_block",
             () -> new Block(BlockBehaviour.Properties.of(Material.METAL)
                     .strength(4f, 20f).sound(SoundType.METAL).requiresCorrectToolForDrops()), ModCreativeModeTab.ORNITHOPHOBIA_TAB);
+
+    public static final  RegistryObject<Block> STEEL_BLOCK = registerBlock("steel_block",
+            () -> new Block(BlockBehaviour.Properties.of(Material.METAL)
+                    .strength(20f, 40f).sound(SoundType.METAL).requiresCorrectToolForDrops()), ModCreativeModeTab.ORNITHOPHOBIA_TAB);
+
+    public static final  RegistryObject<Block> DEEPSLATE_TITANIUM_ORE = registerBlock("deepslate_titanium_ore",
+            () -> new Block(BlockBehaviour.Properties.of(Material.STONE)
+                    .strength(30f, 15f).sound(SoundType.DEEPSLATE).requiresCorrectToolForDrops()), ModCreativeModeTab.ORNITHOPHOBIA_TAB);
+
+    public static final  RegistryObject<Block> TITANIUM_BLOCK = registerBlock("titanium_block",
+            () -> new Block(BlockBehaviour.Properties.of(Material.METAL)
+                    .strength(50f, 1200f).sound(SoundType.NETHERITE_BLOCK).requiresCorrectToolForDrops()), ModCreativeModeTab.ORNITHOPHOBIA_TAB);
 
     public static final  RegistryObject<Block> EYE_ROSE = registerBlock("eye_rose",
             () -> new FlowerBlock(MobEffects.BLINDNESS, 8, BlockBehaviour.Properties.copy(Blocks.DANDELION)
@@ -68,6 +85,51 @@ public class ModBlock {
     public static final  RegistryObject<Block> STRIPPED_FLESH_LOG = registerBlock("stripped_flesh_log",
             () -> new ModFlammableRotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.STRIPPED_OAK_LOG)),
             ModCreativeModeTab.ORNITHOPHOBIA_TAB);
+
+    public static final  RegistryObject<Block> FLESH_LEAVES = registerBlock("flesh_leaves",
+            () -> new LeavesBlock(BlockBehaviour.Properties.copy(Blocks.OAK_LEAVES)) {
+                @Override
+                public boolean isFlammable(BlockState state, BlockGetter level, BlockPos pos, Direction direction) {
+                    return true;
+                }
+
+                @Override
+                public int getFlammability(BlockState state, BlockGetter level, BlockPos pos, Direction direction) {
+                    return 60;
+                }
+
+                @Override
+                public int getFireSpreadSpeed(BlockState state, BlockGetter level, BlockPos pos, Direction direction) {
+                    return 30;
+                }
+            }, ModCreativeModeTab.ORNITHOPHOBIA_TAB);
+
+
+    public static final  RegistryObject<Block> EYEBALL_LEAVES = registerBlock("eyeball_leaves",
+            () -> new LeavesBlock(BlockBehaviour.Properties.copy(Blocks.OAK_LEAVES)) {
+                @Override
+                public boolean isFlammable(BlockState state, BlockGetter level, BlockPos pos, Direction direction) {
+                    return true;
+                }
+
+                @Override
+                public int getFlammability(BlockState state, BlockGetter level, BlockPos pos, Direction direction) {
+                    return 60;
+                }
+
+                @Override
+                public int getFireSpreadSpeed(BlockState state, BlockGetter level, BlockPos pos, Direction direction) {
+                    return 30;
+                }
+            }, ModCreativeModeTab.ORNITHOPHOBIA_TAB);
+
+    public static final  RegistryObject<Block> FLESH_SAPLING = registerBlock("flesh_sapling",
+            () -> new SaplingBlock(new FleshTreeGrower(),BlockBehaviour.Properties.copy(Blocks.OAK_SAPLING)),
+            ModCreativeModeTab.ORNITHOPHOBIA_TAB);
+
+    public static final  RegistryObject<Block> COMPRESSED_COBBLESTONE = registerBlock("compressed_cobblestone",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.COBBLESTONE)
+                    .strength(4.0f, 12.0f)), ModCreativeModeTab.ORNITHOPHOBIA_TAB);
 
 
     private static <T extends Block> RegistryObject<T> registerBlockWithoutBlockItem(String name, Supplier<T> block) {

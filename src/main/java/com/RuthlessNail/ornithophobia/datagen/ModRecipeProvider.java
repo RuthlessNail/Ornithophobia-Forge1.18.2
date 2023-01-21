@@ -1,8 +1,8 @@
 package com.RuthlessNail.ornithophobia.datagen;
 
-import com.RuthlessNail.ornithophobia.ModItemTags;
 import com.RuthlessNail.ornithophobia.block.ModBlock;
 import com.RuthlessNail.ornithophobia.item.ModItems;
+import com.RuthlessNail.ornithophobia.util.ModTags;
 import com.google.common.collect.ImmutableList;
 import com.google.common.collect.ImmutableMap;
 import com.google.common.collect.Sets;
@@ -51,6 +51,7 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
     private static final Logger LOGGER = LogUtils.getLogger();
     private static final Gson GSON = (new GsonBuilder()).setPrettyPrinting().create();
     protected static final ImmutableList<ItemLike> TIN_SMELTABLES = ImmutableList.of(ModBlock.TIN_ORE.get(), ModBlock.DEEPSLATE_TIN_ORE.get(), ModItems.RAW_TIN.get());
+    protected static final ImmutableList<ItemLike> TITANIUM_SMELTABLES = ImmutableList.of(ModBlock.DEEPSLATE_TITANIUM_ORE.get(), ModItems.RAW_TITANIUM.get());
 
     protected static final Map<BlockFamily.Variant, BiFunction<ItemLike, ItemLike, RecipeBuilder>> shapeBuilders = ImmutableMap.<BlockFamily.Variant, BiFunction<ItemLike, ItemLike, RecipeBuilder>>builder().put(BlockFamily.Variant.BUTTON, (p_176733_, p_176734_) -> {
         return buttonBuilder(p_176733_, Ingredient.of(p_176734_));
@@ -189,11 +190,19 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 "ornithophobia:tin_block", null,
                 "ornithophobia:tin_from_tin_block", null);
 
+        nineBlockStorageRecipes(pFinishedRecipeConsumer, ModItems.TITANIUM_INGOT.get(), ModBlock.TITANIUM_BLOCK.get(),
+                "ornithophobia:titanium_block", null,
+                "ornithophobia:titanium_from_titanium_block", null);
+
+        nineBlockStorageRecipes(pFinishedRecipeConsumer, Blocks.COBBLESTONE, ModBlock.COMPRESSED_COBBLESTONE.get(),
+                "ornithophobia:compressed_cobblestone", null,
+                "ornithophobia:cobblestone_from_compressed_cobblestone", null);
+
         woodFromLogs(pFinishedRecipeConsumer, ModBlock.FLESH_WOOD.get(), ModBlock.FLESH_LOG.get());
 
         woodFromLogs(pFinishedRecipeConsumer, ModBlock.STRIPPED_FLESH_WOOD.get(), ModBlock.STRIPPED_FLESH_LOG.get());
 
-        planksFromLogs(pFinishedRecipeConsumer, ModItems.STRANGE_FLESH.get(), ModItemTags.FLESH_LOGS);
+        planksFromLogs(pFinishedRecipeConsumer, ModItems.STRANGE_FLESH.get(), ModTags.Items.FLESH_LOGS);
 
         ShapedRecipeBuilder.shaped(ModItems.TIN_AXE.get()).define('#', Items.STICK).define('X', ModItems.TIN_INGOT.get())
                 .pattern("XX")
@@ -251,24 +260,99 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 requires(ItemTags.COALS).requires(ItemTags.COALS).requires(ItemTags.COALS).requires(ItemTags.COALS).
                 unlockedBy("hasHammer", has(ModItems.WOODEN_HAMMER.get())).save(pFinishedRecipeConsumer);
 
-        ShapedRecipeBuilder.shaped(ModItems.WOODEN_HAMMER.get()).define('#', Items.STICK).define('X', ItemTags.PLANKS)
-                .pattern(" XX")
-                .pattern(" #X")
-                .pattern("#  ")
+        ShapedRecipeBuilder.shaped(ModItems.WOODEN_HAMMER.get()).define('#', Items.STICK).define('X', ItemTags.LOGS)
+                .pattern("X")
+                .pattern("#")
+                .pattern("#")
                 .unlockedBy("has_planks", has(ItemTags.PLANKS)).save(pFinishedRecipeConsumer);
+
+        ShapedRecipeBuilder.shaped(ModItems.STONE_HAMMER.get()).define('#', Items.STICK).define('X', ModBlock.COMPRESSED_COBBLESTONE.get())
+                .pattern("X")
+                .pattern("#")
+                .pattern("#")
+                .unlockedBy("has_planks", has(ItemTags.PLANKS)).save(pFinishedRecipeConsumer);
+
+        ShapedRecipeBuilder.shaped(ModItems.TIN_HAMMER.get()).define('#', Items.STICK).define('X', ModBlock.TIN_BLOCK.get())
+                .pattern("X")
+                .pattern("#")
+                .pattern("#")
+                .unlockedBy("has_tin", has(ModItems.TIN_INGOT.get())).save(pFinishedRecipeConsumer);
+
+        ShapedRecipeBuilder.shaped(ModItems.IRON_HAMMER.get()).define('#', Items.STICK).define('X', Items.IRON_BLOCK)
+                .pattern("X")
+                .pattern("#")
+                .pattern("#")
+                .unlockedBy("has_iron", has(Items.IRON_INGOT)).save(pFinishedRecipeConsumer);
+
+        ShapedRecipeBuilder.shaped(ModItems.GOLD_HAMMER.get()).define('#', Items.STICK).define('X', Items.GOLD_BLOCK)
+                .pattern("X")
+                .pattern("#")
+                .pattern("#")
+                .unlockedBy("has_gold", has(Items.GOLD_INGOT)).save(pFinishedRecipeConsumer);
+
+        ShapedRecipeBuilder.shaped(ModItems.DIAMOND_HAMMER.get()).define('#', Items.STICK).define('X', Items.DIAMOND_BLOCK)
+                .pattern("X")
+                .pattern("#")
+                .pattern("#")
+                .unlockedBy("has_gold", has(Items.GOLD_INGOT)).save(pFinishedRecipeConsumer);
 
         ShapedRecipeBuilder.shaped(ModBlock.COPPER_LAMP.get()).define('#', Items.COPPER_INGOT).define('X', Items.GLOWSTONE).define('R', Items.REDSTONE)
                 .pattern("#R#")
                 .pattern("RXR")
                 .pattern("#R#")
-                .unlockedBy("has_planks", has(ItemTags.PLANKS)).save(pFinishedRecipeConsumer);
+                .unlockedBy("has_glowstone", has(Items.GLOWSTONE)).save(pFinishedRecipeConsumer);
 
         oreSmelting(pFinishedRecipeConsumer, TIN_SMELTABLES, ModItems.TIN_INGOT.get(), 0.7F, 200, "tin_ingot");
         oreBlasting(pFinishedRecipeConsumer, TIN_SMELTABLES, ModItems.TIN_INGOT.get(), 0.7F, 100, "tin_ingot");
 
+        oreSmelting(pFinishedRecipeConsumer, TITANIUM_SMELTABLES, ModItems.TITANIUM_INGOT.get(), 2.0F, 400, "titanium_ingot");
+        oreBlasting(pFinishedRecipeConsumer, TITANIUM_SMELTABLES, ModItems.TITANIUM_INGOT.get(), 2.0F, 200, "titanium_ingot");
+
+
         ModCookingRecipeBuilder.smelting(Ingredient.of(ModItems.STRANGE_FLESH.get()), ModItems.COOKED_STRANGE_FLESH.get(), 0.35F,
                 200).unlockedBy("has_strange_flesh", has(ModItems.STRANGE_FLESH.get())).
                 save(pFinishedRecipeConsumer);
+
+
+        ShapedRecipeBuilder.shaped(ModItems.TITANIUM_AXE.get()).define('#', ModItems.STEEL_ROD.get()).define('X', ModItems.TITANIUM_INGOT.get())
+                .pattern("XX")
+                .pattern("X#")
+                .pattern(" #")
+                .unlockedBy("has_titanium", has(ModItems.TITANIUM_INGOT.get())).save(pFinishedRecipeConsumer);
+
+        ShapedRecipeBuilder.shaped(ModItems.TITANIUM_HOE.get()).define('#', ModItems.STEEL_ROD.get()).define('X', ModItems.TITANIUM_INGOT.get())
+                .pattern("XX")
+                .pattern(" #")
+                .pattern(" #")
+                .unlockedBy("has_titanium", has(ModItems.TITANIUM_INGOT.get())).save(pFinishedRecipeConsumer);
+
+        ShapedRecipeBuilder.shaped(ModItems.TITANIUM_PICKAXE.get()).define('#', ModItems.STEEL_ROD.get()).define('X', ModItems.TITANIUM_INGOT.get())
+                .pattern("XXX")
+                .pattern(" # ")
+                .pattern(" # ")
+                .unlockedBy("has_titanium", has(ModItems.TITANIUM_INGOT.get())).save(pFinishedRecipeConsumer);
+
+        ShapedRecipeBuilder.shaped(ModItems.TITANIUM_SHOVEL.get()).define('#', ModItems.STEEL_ROD.get()).define('X', ModItems.TITANIUM_INGOT.get())
+                .pattern(" X")
+                .pattern(" #")
+                .pattern(" #")
+                .unlockedBy("has_titanium", has(ModItems.TITANIUM_INGOT.get())).save(pFinishedRecipeConsumer);
+
+        ShapedRecipeBuilder.shaped(ModItems.TITANIUM_SWORD.get()).define('#', ModItems.STEEL_ROD.get()).define('X', ModItems.TITANIUM_INGOT.get())
+                .pattern(" X")
+                .pattern(" X")
+                .pattern(" #")
+                .unlockedBy("has_titanium", has(ModItems.TITANIUM_INGOT.get())).save(pFinishedRecipeConsumer);
+
+        ShapedRecipeBuilder.shaped(ModItems.IRON_ROD.get(),4).define('#', ModItems.IRON_PLATE.get())
+                .pattern("#")
+                .pattern("#")
+                .unlockedBy("has_iron_plate", has(ModItems.IRON_PLATE.get())).save(pFinishedRecipeConsumer);
+
+        ShapedRecipeBuilder.shaped(ModItems.STEEL_ROD.get(),4).define('#', ModItems.STEEL_PLATE.get())
+                .pattern("#")
+                .pattern("#")
+                .unlockedBy("has_steel_plate", has(ModItems.STEEL_PLATE.get())).save(pFinishedRecipeConsumer);
 
         cookRecipes(pFinishedRecipeConsumer, "smoking", RecipeSerializer.SMOKING_RECIPE, 100);
         cookRecipes(pFinishedRecipeConsumer, "campfire_cooking", RecipeSerializer.CAMPFIRE_COOKING_RECIPE, 600);

@@ -1,6 +1,7 @@
 {
   "replace": false,
   "values": [
-
+    "ornithophobia:titanium_block",
+    "ornithophobia:deepslate_titanium_ore"
   ]
 }

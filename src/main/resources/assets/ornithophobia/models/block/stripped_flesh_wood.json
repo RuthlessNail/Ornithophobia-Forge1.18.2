@@ -1,7 +1,0 @@
-{
-  "parent": "block/cube_column",
-  "textures": {
-    "end": "ornithophobia:block/stripped_flesh_log",
-    "side": "ornithophobia:block/stripped_flesh_log"
-  }
-}

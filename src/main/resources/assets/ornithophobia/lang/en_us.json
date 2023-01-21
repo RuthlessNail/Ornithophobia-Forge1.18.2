@@ -1,9 +1,23 @@
 {
   "item.ornithophobia.eyeball": "Eyeball",
   "item.ornithophobia.raw_tin": "Raw Tin",
+  "item.ornithophobia.raw_titanium": "Raw Titanium",
   "item.ornithophobia.tin_ingot": "Tin Ingot",
-  "item.ornithophobia.wooden_hammer": "Wooden Hammer",
+  "item.ornithophobia.titanium_ingot": "Titanium Ingot",
   "item.ornithophobia.compacted_coal": "Compacted Coal",
+
+  "item.ornithophobia.iron_plate": "Iron Plate",
+  "item.ornithophobia.steel_plate": "Steel Plate",
+
+  "item.ornithophobia.iron_rod": "Iron Rod",
+  "item.ornithophobia.steel_rod": "Steel Rod",
+
+  "item.ornithophobia.wooden_hammer": "Wooden Hammer",
+  "item.ornithophobia.stone_hammer": "Stone Hammer",
+  "item.ornithophobia.tin_hammer": "Tin Hammer",
+  "item.ornithophobia.iron_hammer": "Iron Hammer",
+  "item.ornithophobia.gold_hammer": "Gold Hammer",
+  "item.ornithophobia.diamond_hammer": "Diamond Hammer",
 
   "item.ornithophobia.tin_sword":"Tin Sword",
   "item.ornithophobia.tin_pickaxe":"Tin Pickaxe",
@@ -16,6 +30,9 @@
   "item.ornithophobia.tin_leggings":"Tin Leggings",
   "item.ornithophobia.tin_boots":"Tin Boots",
 
+  "item.steel_ingot": "Steel Ingot",
+
+
   "block.ornithophobia.eyeball_block": "Eyeball Pile",
   "block.ornithophobia.tin_ore": "Tin Ore",
   "block.ornithophobia.deepslate_tin_ore": "Deepslate Tin Ore",
@@ -24,22 +41,43 @@
   "block.ornithophobia.copper_lamp":"Copper Lamp",
   "block.ornithophobia.eye_rose":"Eye Rose",
   "block.ornithophobia.potted_eye_rose":"Potted Eye Rose",
+  "block.ornithophobia.compressed_cobblestone": "Compressed Cobblestone",
+
+  "block.ornithophobia.titanium_block":"Titanium Block",
+  "block.ornithophobia.deepslate_titanium_ore":"Deepslate Titanium Ore",
+
+  "item.ornithophobia.titanium_sword":"Titanium Sword",
+  "item.ornithophobia.titanium_pickaxe":"Titanium Pickaxe",
+  "item.ornithophobia.titanium_axe":"Titanium Axe",
+  "item.ornithophobia.titanium_shovel":"Titanium Shovel",
+  "item.ornithophobia.titanium_hoe":"Titanium Hoe",
+
+  "item.ornithophobia.apostate_sword": "Sword of Apostate",
 
   "block.ornithophobia.flesh_log":"Flesh Log",
   "block.ornithophobia.flesh_wood":"Flesh Wood",
   "block.ornithophobia.stripped_flesh_log":"Skinless Flesh Log",
   "block.ornithophobia.stripped_flesh_wood":"Skinless Flesh Wood",
+  "block.ornithophobia.flesh_leaves":"Flesh Leaves",
+  "block.ornithophobia.eyeball_leaves":"Eyeball Leaves",
+  "block.ornithophobia.flesh_sapling":"Flesh Sapling",
   "item.ornithophobia.strange_flesh":"Strange Flesh",
   "item.ornithophobia.cooked_strange_flesh":"Cooked Strange Flesh",
 
 
 
-  "tooltip.ornithophobia.wooden_hammer.tooltip": "\"§o Look at you all, look at you, §kplayer§r§o, they push you, you run, you hide, then they find you, threaten to smash your head in, then you run again. When would you stop running, §kplayer§r§o?\"",
+  "tooltip.ornithophobia.wooden_hammer.tooltip": "\"§o Look at you all, look at you, §kplayer§r§o, they push you, you run, you hide, then they find you, threaten to smash your head in, then you run again. When would you stop running, §kplayer§r§o?§r\"",
+  "tooltip.ornithophobia.stone_hammer.tooltip": "\"§oWhat is this so-called 'tool'? Uhm... What does it look like? What is it made of? I have to know, otherwise, there's no way for me to give you anything.§r\"",
+  "tooltip.ornithophobia.tin_hammer.tooltip": "\"§oThe dirt you must not touch. The nest of the Aves, not high, nor low, not obscene, nor mean. Stain yourself with the dirt, you must not, wait for the sun to dry it off, then uncover what your dreamt. Fortune, power, other desire. The hollow bone buried within your wings, you must keep, or you'll end up, among the dirt.§r\"",
+  "tooltip.ornithophobia.iron_hammer.tooltip": "\"§oThose wretched things, they rid one's mind, but kill one's body, they do not. The bodies remains, slaves of the hive. Slay them once, they rise, as their minds are dead, replaced by void. Slay them twice, they rise, no longer human, with anger they strike. Slay them thrice, they rise, you cannot slay what has already been dead. Burn the body, lest they rise again.§r\"",
+  "tooltip.ornithophobia.gold_hammer.tooltip": "\"§oWealth, a noble concept, yet meaningless. Greed, frowned upon, yet leave one insatiable. When the creatures of sky made their descend, all objects lost value. Now tell me, §kplayer§r§o, does the gold still worth an arm and a leg?§r\"",
+  "tooltip.ornithophobia.diamond_hammer.tooltip": "\"§oPraise the universe that was born within the nest. Pluck out your feather. Do not look at them. Watch your every move. Do not look at them. Pluck out your beak. Do not look at §kthem§r§o. Do not fall. Pluck out your legs. Do not stop. Pluck out your eyes. Do not stop praising. Beware of the cliff. Praise the universe that was the nest.§r\"",
   "tooltip.ornithophobia.shift.tooltip": "Press §4§l[SHIFT]§r to inspect",
   "tooltip.ornithophobia.compacted_coal.tooltip": "§oThis little fella can last four time longer than non-compacted coal!",
   "tooltip.ornithophobia.eyeball.tooltip": "§oThis wretched eye, detached from it's host, yet still twitching violently, staring at you, unnervingly...",
   "tooltip.ornithophobia.strange_flesh.tooltip": "§o\"Is this even edible?\", you may question. That is a good question, real good...",
   "tooltip.ornithophobia.cooked_flesh.tooltip": "§oLooks a lot more edible, taste better too! It taste like chicken... Well, rotting chicken, but it taste like chicken nonetheless!",
+  "tooltip.ornithophobia.apostate_sword.tooltip": "§oTorn flesh, haunting greed, a martyr'd heroine or a disgustful pilferer. Watching them as thy life bleed away, laughing, weeping, wherefore not so catch but a wink? Hovering between the beast and the aves, the martyr'd heroine 'r the disgustful pilferer, so rest still, the one with no wrath.",
 
   "itemGroup.ornithophobiatab": "Ornithophobia"
 

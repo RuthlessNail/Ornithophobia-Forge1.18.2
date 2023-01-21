@@ -1,9 +1,23 @@
 {
   "item.ornithophobia.eyeball": "眼球",
   "item.ornithophobia.raw_tin": "粗锡",
+  "item.ornithophobia.raw_titanium": "粗钛",
   "item.ornithophobia.tin_ingot": "锡锭",
-  "item.ornithophobia.wooden_hammer": "木锤",
+  "item.ornithophobia.titanium_ingot": "钛锭",
   "item.ornithophobia.compacted_coal": "压缩煤炭",
+
+  "item.ornithophobia.iron_plate": "铁板",
+  "item.ornithophobia.steel_plate": "钢板",
+
+  "item.ornithophobia.iron_rod": "铁棒",
+  "item.ornithophobia.steel_rod": "钢棒",
+
+  "item.ornithophobia.wooden_hammer": "木锤",
+  "item.ornithophobia.stone_hammer": "石锤",
+  "item.ornithophobia.tin_hammer": "锡锤",
+  "item.ornithophobia.iron_hammer": "铁锤",
+  "item.ornithophobia.gold_hammer": "金锤",
+  "item.ornithophobia.diamond_hammer": "钻石锤",
 
   "item.ornithophobia.tin_sword":"锡剑",
   "item.ornithophobia.tin_pickaxe":"锡镐",
@@ -16,6 +30,16 @@
   "item.ornithophobia.tin_leggings":"锡护腿",
   "item.ornithophobia.tin_boots":"锡靴子",
 
+  "item.steel_ingot": "钢锭",
+
+  "item.ornithophobia.titanium_sword":"钛剑",
+  "item.ornithophobia.titanium_pickaxe":"钛镐",
+  "item.ornithophobia.titanium_axe":"钛斧",
+  "item.ornithophobia.titanium_shovel":"钛铲",
+  "item.ornithophobia.titanium_hoe":"钛锄",
+
+  "item.ornithophobia.apostate_sword": "背教者之剑",
+
   "block.ornithophobia.eyeball_block": "眼球堆",
   "block.ornithophobia.tin_ore": "锡矿石",
   "block.ornithophobia.deepslate_tin_ore": "深层锡矿石",
@@ -24,22 +48,34 @@
   "block.ornithophobia.copper_lamp":"铜灯",
   "block.ornithophobia.eye_rose":"眼玫",
   "block.ornithophobia.potted_eye_rose":"眼玫盆栽",
+  "block.ornithophobia.compressed_cobblestone": "压缩圆石",
+
+  "block.ornithophobia.titanium_block":"钛块",
+  "block.ornithophobia.deepslate_titanium_ore":"深层钛矿石",
 
   "block.ornithophobia.flesh_log":"血肉原木",
   "block.ornithophobia.flesh_wood":"血肉木头",
   "block.ornithophobia.stripped_flesh_log":"剥皮血肉原木",
   "block.ornithophobia.stripped_flesh_wood":"剥皮血肉木头",
+  "block.ornithophobia.flesh_leaves":"血肉叶子",
+  "block.ornithophobia.eyeball_leaves":"眼球叶子",
+  "block.ornithophobia.flesh_sapling":"血肉树苗",
   "item.ornithophobia.strange_flesh":"奇异血肉",
   "item.ornithophobia.cooked_strange_flesh":"奇异熟肉",
 
 
-  "tooltip.ornithophobia.wooden_hammer.tooltip": "§o“看看你们，看看你，§kplayer§r§o，祂们追你，你便跑，便藏，然后祂们找到了你，威胁砸烂你的头颅，你便又跑。你什么时候才会停下来，§kplayer§r§o?”",
+  "tooltip.ornithophobia.wooden_hammer.tooltip": "§o“看看你们，看看你，§kplayer§r§o，祂们追你，你便跑，便藏，然后祂们找到了你，威胁砸烂你的头颅，你便又跑。你什么时候才会停下来，§kplayer§r§o?§r”",
+  "tooltip.ornithophobia.stone_hammer.tooltip": "“§o这个所谓的‘工具’究竟是什么？我是说它长什么样？用什么做的？这我得知道，不然我无法给你提供任何东西。§r”",
+  "tooltip.ornithophobia.tin_hammer.tooltip": "“§o不要接触泥土，巢穴不在高或低的地方，不下作，不低劣。不要沾染泥土，等太阳晾干后，揭开你想的东西。钱，权，或者性。不要丢失翅膀里中空的长骨，否则你不能不接触泥土。§r”",
+  "tooltip.ornithophobia.iron_hammer.tooltip": "“§o这些可憎之物，磨灭一人的思想，却不杀死一人的躯体。躯体仍然存在，成为巢穴的奴隶。劈倒一次，躯体再起，毕竟其思想已死，仅剩虚无。再而劈，躯体再起，满腔愤怒，它们恶毒地攻击。三而劈，躯体再起，你不得以杀死已死之人。烧掉躯体，免得它们再起。§r”",
+  "tooltip.ornithophobia.gold_hammer.tooltip": "“§o金钱，一个尊贵的概念，却又毫无意义。贪婪，被鄙视的行为，却又让人渴望更多。当天空之物降于凡间时，一切物件失去了价值。现在告诉我，§kplayer§r§o，黄金仍值得你残肢断臂吗？§r”",
+  "tooltip.ornithophobia.diamond_hammer.tooltip": "“§o赞美鸟巢中诞生的宇宙，拔掉你的翎羽，不要注视着祂们，提高警惕，拔掉你的喙，不要看§k祂们§r§o，别掉下去，拔掉你的双腿，别停下来，拔掉你的眼睛，别忘记赞美，小心悬崖，赞美属于鸟巢的宇宙。§r”",
   "tooltip.ornithophobia.shift.tooltip": "按§4§l[SHIFT]§r以检视",
   "tooltip.ornithophobia.compacted_coal.tooltip": "§o这个小玩意的燃烧时间高达普通煤炭的四倍！",
   "tooltip.ornithophobia.eyeball.tooltip": "§o这憎恶之物，即使早已与它主人的躯体分离，仍在愤怒地蠕动，不安地注视着你...",
   "tooltip.ornithophobia.strange_flesh.tooltip": "§o“这能吃吗？”，你可能会问，我只能说这是个好问题，很好的问题...",
   "tooltip.ornithophobia.cooked_flesh.tooltip": "§o看起来更能吃了，吃起来也是！这肉吃起来味道像鸡... 逐渐腐烂的鸡，但那也算鸡！",
-
+  "tooltip.ornithophobia.apostate_sword.tooltip": "§o撕扯着的血肉，萦绕的贪念，是殉难的英雄亦是可耻的盗贼。注视着祂们而死，是狂笑，是哭泣，为何不就这样睡去？盘旋在“兽”和“鸟”之间，是殉难的英雄还是可耻的盗贼，就这样长眠吧，没有憎恶的人。",
 
   "itemGroup.ornithophobiatab": "恐鸟症"
 }
