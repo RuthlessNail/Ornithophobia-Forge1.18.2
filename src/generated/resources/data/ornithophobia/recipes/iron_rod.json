@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "#",
+    "#"
+  ],
+  "key": {
+    "#": {
+      "item": "ornithophobia:iron_plate"
+    }
+  },
+  "result": {
+    "item": "ornithophobia:iron_rod",
+    "count": 4
+  }
+}

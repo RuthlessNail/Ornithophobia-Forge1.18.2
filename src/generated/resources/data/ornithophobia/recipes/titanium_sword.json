@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " X",
+    " X",
+    " #"
+  ],
+  "key": {
+    "#": {
+      "item": "ornithophobia:steel_rod"
+    },
+    "X": {
+      "item": "ornithophobia:titanium_ingot"
+    }
+  },
+  "result": {
+    "item": "ornithophobia:titanium_sword"
+  }
+}

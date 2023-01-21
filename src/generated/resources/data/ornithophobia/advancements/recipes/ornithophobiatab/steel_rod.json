@@ -1,0 +1,34 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "ornithophobia:steel_rod"
+    ]
+  },
+  "criteria": {
+    "has_steel_plate": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "ornithophobia:steel_plate"
+            ]
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "ornithophobia:steel_rod"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_steel_plate",
+      "has_the_recipe"
+    ]
+  ]
+}
