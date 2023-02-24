@@ -1,5 +1,10 @@
 package com.RuthlessNail.ornithophobia;
 
+import com.RuthlessNail.ornithophobia.effect.ModEffects;
+import com.RuthlessNail.ornithophobia.enchantment.ModEnchantments;
+import com.RuthlessNail.ornithophobia.entity.ModEntityTypes;
+import com.RuthlessNail.ornithophobia.entity.client.MuppetRenderer;
+import com.RuthlessNail.ornithophobia.entity.client.SparrowRenderer;
 import com.RuthlessNail.ornithophobia.world.ModRegion;
 import com.RuthlessNail.ornithophobia.world.ModSurfaceRuleData;
 import com.RuthlessNail.ornithophobia.block.ModBlock;
@@ -9,15 +14,18 @@ import com.RuthlessNail.ornithophobia.sound.ModSounds;
 import com.mojang.logging.LogUtils;
 import net.minecraft.client.renderer.ItemBlockRenderTypes;
 import net.minecraft.client.renderer.RenderType;
+import net.minecraft.client.renderer.entity.EntityRenderers;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.FlowerPotBlock;
 import net.minecraftforge.common.MinecraftForge;
+import net.minecraftforge.eventbus.EventBus;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import org.slf4j.Logger;
+import software.bernie.geckolib3.GeckoLib;
 import terrablender.api.Regions;
 import terrablender.api.SurfaceRuleManager;
 
@@ -39,13 +47,19 @@ public class Ornithophobia
         ModBlock.register(eventBus);
         ModPaintings.register(eventBus);
         ModSounds.register(eventBus);
+        ModEffects.register(eventBus);
+        ModEnchantments.register(eventBus);
+        ModEntityTypes.register(eventBus);
 
 
         eventBus.addListener(this::clientSetup);
         eventBus.addListener(this::setup);
 
+        GeckoLib.initialize();
+
         // Register ourselves for server and other game events we are interested in
         MinecraftForge.EVENT_BUS.register(this);
+
     }
 
 
@@ -55,6 +69,9 @@ public class Ornithophobia
 
         ItemBlockRenderTypes.setRenderLayer(ModBlock.FLESH_LEAVES.get(), RenderType.cutout());
         ItemBlockRenderTypes.setRenderLayer(ModBlock.FLESH_SAPLING.get(), RenderType.cutout());
+
+        EntityRenderers.register(ModEntityTypes.SPARROW.get(), SparrowRenderer::new);
+        EntityRenderers.register(ModEntityTypes.MUPPET.get(), MuppetRenderer::new);
     }
 
 

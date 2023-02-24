@@ -1,0 +1,12 @@
+{
+  "replace": false,
+  "values": [
+    "ornithophobia:wooden_hammer",
+    "ornithophobia:stone_hammer",
+    "ornithophobia:tin_hammer",
+    "ornithophobia:iron_hammer",
+    "ornithophobia:gold_hammer",
+    "ornithophobia:diamond_hammer",
+    "ornithophobia:titanium_hammer"
+  ]
+}

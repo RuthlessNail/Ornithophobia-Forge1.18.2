@@ -29,13 +29,6 @@ public class ModItemModelProvider extends ItemModelProvider {
         handheldItem(ModItems.TITANIUM_SWORD.get());
         handheldItem(ModItems.TITANIUM_AXE.get());
 
-        handheldItem(ModItems.WOODEN_HAMMER.get());
-        handheldItem(ModItems.STONE_HAMMER.get());
-        handheldItem(ModItems.TIN_HAMMER.get());
-        handheldItem(ModItems.IRON_HAMMER.get());
-        handheldItem(ModItems.GOLD_HAMMER.get());
-        handheldItem(ModItems.DIAMOND_HAMMER.get());
-
         simpleItem(ModItems.COMPACTED_COAL.get());
 
         simpleItem(ModItems.TIN_HELMET.get());
@@ -55,6 +48,8 @@ public class ModItemModelProvider extends ItemModelProvider {
         simpleItem(ModItems.STEEL_PLATE.get());
         simpleItem(ModItems.IRON_ROD.get());
         simpleItem(ModItems.STEEL_ROD.get());
+
+
 
 
     }

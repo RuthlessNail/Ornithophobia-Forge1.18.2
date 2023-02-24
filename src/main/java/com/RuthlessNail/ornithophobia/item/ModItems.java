@@ -1,6 +1,7 @@
 package com.RuthlessNail.ornithophobia.item;
 
 import com.RuthlessNail.ornithophobia.Ornithophobia;
+import com.RuthlessNail.ornithophobia.entity.ModEntityTypes;
 import com.RuthlessNail.ornithophobia.item.custom.ItemCompactedCoal;
 import com.RuthlessNail.ornithophobia.item.custom.ItemHammer;
 import com.RuthlessNail.ornithophobia.item.custom.ItemSwordOfApostate;
@@ -10,6 +11,7 @@ import net.minecraft.network.chat.TranslatableComponent;
 import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.item.*;
 import net.minecraft.world.level.Level;
+import net.minecraftforge.common.ForgeSpawnEggItem;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
@@ -133,6 +135,10 @@ public class ModItems {
                 }
             });
 
+    public static final RegistryObject<Item> TITANIUM_HAMMER = ITEMS.register("titanium_hammer",
+            () -> new ItemHammer(ModTiers.TITANIUM, 7, -3.4f, new Item.Properties().tab
+                    (ModCreativeModeTab.ORNITHOPHOBIA_TAB)));
+
     public static final RegistryObject<Item> COMPACTED_COAL = ITEMS.register("compacted_coal",
             () -> new ItemCompactedCoal(new Item.Properties().tab(ModCreativeModeTab.ORNITHOPHOBIA_TAB)));
 
@@ -244,6 +250,15 @@ public class ModItems {
                         pTooltipComponents.add(new TranslatableComponent("tooltip.ornithophobia.shift.tooltip"));
                     }
                 }});
+
+
+    public static final RegistryObject<Item> SPARROW_SPAWN_EGG = ITEMS.register("sparrow_spawn_egg",
+            () -> new ForgeSpawnEggItem(ModEntityTypes.SPARROW,0xd9d9d9, 0xff5733,
+                    new Item.Properties().tab(ModCreativeModeTab.ORNITHOPHOBIA_TAB)));
+
+    public static final RegistryObject<Item> MUPPET_SPAWN_EGG = ITEMS.register("muppet_spawn_egg",
+            () -> new ForgeSpawnEggItem(ModEntityTypes.MUPPET,0xd9d9d9, 0xff5733,
+                    new Item.Properties().tab(ModCreativeModeTab.ORNITHOPHOBIA_TAB)));
 
 
 
