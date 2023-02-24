@@ -1,0 +1,48 @@
+{
+  "parent": "ornithophobia:ornithophobia/welcome",
+  "display": {
+    "icon": {
+      "item": "minecraft:spyglass"
+    },
+    "title": {
+      "translate": "advancements.ornithophobia.ornithophobia.spyglass_at_sparrow.title"
+    },
+    "description": {
+      "translate": "advancements.ornithophobia.ornithophobia.spyglass_at_sparrow.description"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "spyglass_at_sparrow": {
+      "trigger": "minecraft:using_item",
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:entity_properties",
+            "predicate": {
+              "player": {
+                "looking_at": {
+                  "type": "ornithophobia:sparrow"
+                }
+              }
+            },
+            "entity": "this"
+          }
+        ],
+        "item": {
+          "items": [
+            "minecraft:spyglass"
+          ]
+        }
+      }
+    }
+  },
+  "requirements": [
+    [
+      "spyglass_at_sparrow"
+    ]
+  ]
+}
