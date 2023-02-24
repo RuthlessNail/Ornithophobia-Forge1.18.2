@@ -27,6 +27,7 @@ public class ModTags {
     public static class Items {
 
         public static final TagKey<Item> FLESH_LOGS = tag("flesh_logs");
+        public static final TagKey<Item> HAMMER = tag("hammer");
 
         private static TagKey<Item> tag(String name) {
             return ItemTags.create(new ResourceLocation(Ornithophobia.MOD_ID, name));
