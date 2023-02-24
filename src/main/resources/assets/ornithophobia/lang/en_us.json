@@ -18,6 +18,7 @@
   "item.ornithophobia.iron_hammer": "Iron Hammer",
   "item.ornithophobia.gold_hammer": "Gold Hammer",
   "item.ornithophobia.diamond_hammer": "Diamond Hammer",
+  "item.ornithophobia.titanium_hammer": "Titanium Hammer",
 
   "item.ornithophobia.tin_sword":"Tin Sword",
   "item.ornithophobia.tin_pickaxe":"Tin Pickaxe",
@@ -54,6 +55,9 @@
 
   "item.ornithophobia.apostate_sword": "Sword of Apostate",
 
+  "item.ornithophobia.sparrow_spawn_egg": "Sparrow Spawn Egg",
+  "item.ornithophobia.muppet_spawn_egg": "Muppet Spawn Egg",
+
   "block.ornithophobia.flesh_log":"Flesh Log",
   "block.ornithophobia.flesh_wood":"Flesh Wood",
   "block.ornithophobia.stripped_flesh_log":"Skinless Flesh Log",
@@ -64,7 +68,11 @@
   "item.ornithophobia.strange_flesh":"Strange Flesh",
   "item.ornithophobia.cooked_strange_flesh":"Cooked Strange Flesh",
 
+  "enchantment.ornithophobia.thump": "Thump",
+  "enchantment.ornithophobia.thor": "Þórr",
 
+  "entity.ornithophobia.sparrow": "Sparrow",
+  "entity.ornithophobia.muppet": "Muppet",
 
   "tooltip.ornithophobia.wooden_hammer.tooltip": "\"§o Look at you all, look at you, §kplayer§r§o, they push you, you run, you hide, then they find you, threaten to smash your head in, then you run again. When would you stop running, §kplayer§r§o?§r\"",
   "tooltip.ornithophobia.stone_hammer.tooltip": "\"§oWhat is this so-called 'tool'? Uhm... What does it look like? What is it made of? I have to know, otherwise, there's no way for me to give you anything.§r\"",
@@ -78,6 +86,24 @@
   "tooltip.ornithophobia.strange_flesh.tooltip": "§o\"Is this even edible?\", you may question. That is a good question, real good...",
   "tooltip.ornithophobia.cooked_flesh.tooltip": "§oLooks a lot more edible, taste better too! It taste like chicken... Well, rotting chicken, but it taste like chicken nonetheless!",
   "tooltip.ornithophobia.apostate_sword.tooltip": "§oTorn flesh, haunting greed, a martyr'd heroine or a disgustful pilferer. Watching them as thy life bleed away, laughing, weeping, wherefore not so catch but a wink? Hovering between the beast and the aves, the martyr'd heroine 'r the disgustful pilferer, so rest still, the one with no wrath.",
+
+
+  "advancements.ornithophobia.ornithophobia.welcome.title": "Ornithophobia",
+  "advancements.ornithophobia.ornithophobia.welcome.description": "You have installed Ornithophobia, a fatal mistake.",
+
+  "advancements.ornithophobia.ornithophobia.hammer.title": "It's Hammerin' Time!",
+  "advancements.ornithophobia.ornithophobia.hammer.description": "*Proceeds to hammer all over the place*",
+
+  "advancements.ornithophobia.ornithophobia.spyglass_at_sparrow.title": "It Is a Bird.",
+  "advancements.ornithophobia.ornithophobia.spyglass_at_sparrow.description": "Look at a sparrow through a spyglass.",
+
+  "advancements.ornithophobia.ornithophobia.spyglass_at_muppet.title": "It Isn't a Human.",
+  "advancements.ornithophobia.ornithophobia.spyglass_at_muppet.description": "Look at a muppet through a spyglass.",
+
+  "sounds.ornithophobia.sparrow_ambient": "Sparrow : Sing",
+  "sounds.ornithophobia.sparrow_hurt": "Sparrow : Yowls",
+  "sounds.ornithophobia.sparrow_death": "Sparrow : Dies",
+  "sounds.ornithophobia.sparrow_swoop": "Sparrow : Swoops",
 
   "itemGroup.ornithophobiatab": "Ornithophobia"
 

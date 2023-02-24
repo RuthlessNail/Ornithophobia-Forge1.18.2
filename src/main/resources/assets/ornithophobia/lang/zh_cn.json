@@ -18,6 +18,7 @@
   "item.ornithophobia.iron_hammer": "铁锤",
   "item.ornithophobia.gold_hammer": "金锤",
   "item.ornithophobia.diamond_hammer": "钻石锤",
+  "item.ornithophobia.titanium_hammer": "钛锤",
 
   "item.ornithophobia.tin_sword":"锡剑",
   "item.ornithophobia.tin_pickaxe":"锡镐",
@@ -39,6 +40,9 @@
   "item.ornithophobia.titanium_hoe":"钛锄",
 
   "item.ornithophobia.apostate_sword": "背教者之剑",
+
+  "item.ornithophobia.sparrow_spawn_egg": "麻雀刷怪蛋",
+  "item.ornithophobia.muppet_spawn_egg": "皮偶刷怪蛋",
 
   "block.ornithophobia.eyeball_block": "眼球堆",
   "block.ornithophobia.tin_ore": "锡矿石",
@@ -63,6 +67,11 @@
   "item.ornithophobia.strange_flesh":"奇异血肉",
   "item.ornithophobia.cooked_strange_flesh":"奇异熟肉",
 
+  "enchantment.ornithophobia.thump": "重击",
+  "enchantment.ornithophobia.thor": "雷鸣",
+
+  "entity.ornithophobia.sparrow": "麻雀",
+  "entity.ornithophobia.muppet": "皮偶",
 
   "tooltip.ornithophobia.wooden_hammer.tooltip": "§o“看看你们，看看你，§kplayer§r§o，祂们追你，你便跑，便藏，然后祂们找到了你，威胁砸烂你的头颅，你便又跑。你什么时候才会停下来，§kplayer§r§o?§r”",
   "tooltip.ornithophobia.stone_hammer.tooltip": "“§o这个所谓的‘工具’究竟是什么？我是说它长什么样？用什么做的？这我得知道，不然我无法给你提供任何东西。§r”",
@@ -76,6 +85,23 @@
   "tooltip.ornithophobia.strange_flesh.tooltip": "§o“这能吃吗？”，你可能会问，我只能说这是个好问题，很好的问题...",
   "tooltip.ornithophobia.cooked_flesh.tooltip": "§o看起来更能吃了，吃起来也是！这肉吃起来味道像鸡... 逐渐腐烂的鸡，但那也算鸡！",
   "tooltip.ornithophobia.apostate_sword.tooltip": "§o撕扯着的血肉，萦绕的贪念，是殉难的英雄亦是可耻的盗贼。注视着祂们而死，是狂笑，是哭泣，为何不就这样睡去？盘旋在“兽”和“鸟”之间，是殉难的英雄还是可耻的盗贼，就这样长眠吧，没有憎恶的人。",
+
+  "advancements.ornithophobia.ornithophobia.welcome.title": "恐鸟症",
+  "advancements.ornithophobia.ornithophobia.welcome.description": "你正在游玩恐鸟症，致命的错误。",
+
+  "advancements.ornithophobia.ornithophobia.hammer.title": "锤子时间到！",
+  "advancements.ornithophobia.ornithophobia.hammer.description": "*开始随地儿乱敲*",
+
+  "advancements.ornithophobia.ornithophobia.spyglass_at_sparrow.title": "那是鸟。.",
+  "advancements.ornithophobia.ornithophobia.spyglass_at_sparrow.description": "透过望远镜观察麻雀。",
+
+  "advancements.ornithophobia.ornithophobia.spyglass_at_muppet.title": "那不再是人。",
+  "advancements.ornithophobia.ornithophobia.spyglass_at_muppet.description": "透过望远镜观察皮偶。",
+
+  "sounds.ornithophobia.sparrow_ambient": "麻雀 : 叫",
+  "sounds.ornithophobia.sparrow_hurt": "麻雀 : 哀嚎",
+  "sounds.ornithophobia.sparrow_death": "麻雀 : 死亡",
+  "sounds.ornithophobia.sparrow_swoop": "麻雀 : 俯冲",
 
   "itemGroup.ornithophobiatab": "恐鸟症"
 }

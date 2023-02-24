@@ -9,6 +9,7 @@ import com.RuthlessNail.ornithophobia.item.ModItems;
 import com.RuthlessNail.ornithophobia.world.feature.tree.FleshTreeGrower;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
+import net.minecraft.util.valueproviders.UniformInt;
 import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.CreativeModeTab;
@@ -58,8 +59,8 @@ public class ModBlock {
                     .strength(30f, 15f).sound(SoundType.DEEPSLATE).requiresCorrectToolForDrops()), ModCreativeModeTab.ORNITHOPHOBIA_TAB);
 
     public static final  RegistryObject<Block> TITANIUM_BLOCK = registerBlock("titanium_block",
-            () -> new Block(BlockBehaviour.Properties.of(Material.METAL)
-                    .strength(50f, 1200f).sound(SoundType.NETHERITE_BLOCK).requiresCorrectToolForDrops()), ModCreativeModeTab.ORNITHOPHOBIA_TAB);
+            () -> new OreBlock(BlockBehaviour.Properties.of(Material.METAL)
+                    .strength(50f, 1200f).sound(SoundType.NETHERITE_BLOCK).requiresCorrectToolForDrops(), UniformInt.of(3,7)), ModCreativeModeTab.ORNITHOPHOBIA_TAB);
 
     public static final  RegistryObject<Block> EYE_ROSE = registerBlock("eye_rose",
             () -> new FlowerBlock(MobEffects.BLINDNESS, 8, BlockBehaviour.Properties.copy(Blocks.DANDELION)

@@ -1,0 +1,26 @@
+{
+  "sparrow_ambient": {
+    "subtitle": "sounds.ornithophobia.sparrow_ambient",
+    "sounds": [
+      "ornithophobia:sparrow_ambient"
+    ]
+  },
+  "sparrow_hurt": {
+    "subtitle": "sounds.ornithophobia.sparrow_hurt",
+    "sounds": [
+      "ornithophobia:sparrow_hurt"
+    ]
+  },
+  "sparrow_death": {
+    "subtitle": "sounds.ornithophobia.sparrow_death",
+    "sounds": [
+      "ornithophobia:sparrow_death"
+    ]
+  },
+  "sparrow_swoop": {
+    "subtitle": "sounds.ornithophobia.sparrow_swoop",
+    "sounds": [
+      "ornithophobia:sparrow_swoop"
+    ]
+  }
+}

@@ -13,6 +13,18 @@ public class ModSounds {
     public static final DeferredRegister<SoundEvent> SOUND_EVENTS =
             DeferredRegister.create(ForgeRegistries.SOUND_EVENTS, Ornithophobia.MOD_ID);
 
+    public static final RegistryObject<SoundEvent> SPARROW_AMBIENT =
+            registrySoundEvent("sparrow_ambient");
+
+    public static final RegistryObject<SoundEvent> SPARROW_HURT =
+            registrySoundEvent("sparrow_hurt");
+
+    public static final RegistryObject<SoundEvent> SPARROW_DEATH =
+            registrySoundEvent("sparrow_death");
+
+    public static final RegistryObject<SoundEvent> SPARROW_SWOOP =
+            registrySoundEvent("sparrow_swoop");
+
     public static void register(IEventBus eventBus){
         SOUND_EVENTS.register(eventBus);
     }
