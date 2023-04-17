@@ -49,6 +49,7 @@ public class ModItemModelProvider extends ItemModelProvider {
         simpleItem(ModItems.IRON_ROD.get());
         simpleItem(ModItems.STEEL_ROD.get());
 
+        simpleItem(ModItems.UWU_MUSIC_DISC.get());
 
 
 

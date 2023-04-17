@@ -68,6 +68,9 @@
   "item.ornithophobia.strange_flesh":"Strange Flesh",
   "item.ornithophobia.cooked_strange_flesh":"Cooked Strange Flesh",
 
+  "item.ornithophobia.uwu_music_disc":"Music Disc",
+  "item.ornithophobia.uwu_music_disc.desc": "Foenix-303 - uwu",
+
   "enchantment.ornithophobia.thump": "Thump",
   "enchantment.ornithophobia.thor": "Þórr",
 
@@ -104,6 +107,11 @@
   "sounds.ornithophobia.sparrow_hurt": "Sparrow : Yowls",
   "sounds.ornithophobia.sparrow_death": "Sparrow : Dies",
   "sounds.ornithophobia.sparrow_swoop": "Sparrow : Swoops",
+
+  "sounds.ornithophobia.muppet_ambient": "Muppet : Whines",
+  "sounds.ornithophobia.muppet_hurt": "Muppet : Yowls",
+  "sounds.ornithophobia.muppet_death": "Muppet : Regains Freedom",
+  "sounds.ornithophobia.muppet_angry": "Muppet : Roars",
 
   "itemGroup.ornithophobiatab": "Ornithophobia"
 

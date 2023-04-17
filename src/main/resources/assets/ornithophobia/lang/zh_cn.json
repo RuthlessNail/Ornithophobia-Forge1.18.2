@@ -67,6 +67,9 @@
   "item.ornithophobia.strange_flesh":"奇异血肉",
   "item.ornithophobia.cooked_strange_flesh":"奇异熟肉",
 
+  "item.ornithophobia.uwu_music_disc":"音乐唱片",
+  "item.ornithophobia.uwu_music_disc.desc": "Foenix-303 - uwu",
+
   "enchantment.ornithophobia.thump": "重击",
   "enchantment.ornithophobia.thor": "雷鸣",
 
@@ -102,6 +105,12 @@
   "sounds.ornithophobia.sparrow_hurt": "麻雀 : 哀嚎",
   "sounds.ornithophobia.sparrow_death": "麻雀 : 死亡",
   "sounds.ornithophobia.sparrow_swoop": "麻雀 : 俯冲",
+
+  "sounds.ornithophobia.muppet_ambient": "皮偶 : 呻吟",
+  "sounds.ornithophobia.muppet_hurt": "皮偶 : 哀嚎",
+  "sounds.ornithophobia.muppet_death": "皮偶 : 重获自由",
+  "sounds.ornithophobia.muppet_angry": "皮偶 : 怒吼",
+
 
   "itemGroup.ornithophobiatab": "恐鸟症"
 }

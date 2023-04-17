@@ -5,6 +5,7 @@ import com.RuthlessNail.ornithophobia.entity.ModEntityTypes;
 import com.RuthlessNail.ornithophobia.item.custom.ItemCompactedCoal;
 import com.RuthlessNail.ornithophobia.item.custom.ItemHammer;
 import com.RuthlessNail.ornithophobia.item.custom.ItemSwordOfApostate;
+import com.RuthlessNail.ornithophobia.sound.ModSounds;
 import net.minecraft.client.gui.screens.Screen;
 import net.minecraft.network.chat.Component;
 import net.minecraft.network.chat.TranslatableComponent;
@@ -259,6 +260,9 @@ public class ModItems {
     public static final RegistryObject<Item> MUPPET_SPAWN_EGG = ITEMS.register("muppet_spawn_egg",
             () -> new ForgeSpawnEggItem(ModEntityTypes.MUPPET,0xd9d9d9, 0xff5733,
                     new Item.Properties().tab(ModCreativeModeTab.ORNITHOPHOBIA_TAB)));
+
+    public static final RegistryObject<Item> UWU_MUSIC_DISC = ITEMS.register("uwu_music_disc",
+            () -> new RecordItem(13, ModSounds.UWU, new Item.Properties().tab(ModCreativeModeTab.ORNITHOPHOBIA_TAB).rarity(Rarity.RARE).stacksTo(1)));
 
 
 
