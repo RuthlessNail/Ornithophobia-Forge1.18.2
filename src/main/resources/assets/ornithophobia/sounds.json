@@ -22,5 +22,49 @@
     "sounds": [
       "ornithophobia:sparrow_swoop"
     ]
+  },
+  "muppet_ambient1": {
+    "subtitle": "sounds.ornithophobia.muppet_ambient",
+    "sounds": [
+      "ornithophobia:muppet_ambient1"
+    ]
+  },
+  "muppet_ambient2": {
+    "subtitle": "sounds.ornithophobia.muppet_ambient",
+    "sounds": [
+      "ornithophobia:muppet_ambient2"
+    ]
+  },
+  "muppet_ambient3": {
+    "subtitle": "sounds.ornithophobia.muppet_ambient",
+    "sounds": [
+      "ornithophobia:muppet_ambient3"
+    ]
+  },
+  "muppet_hurt": {
+    "subtitle": "sounds.ornithophobia.muppet_hurt",
+    "sounds": [
+      "ornithophobia:muppet_hurt"
+    ]
+  },
+  "muppet_death": {
+    "subtitle": "sounds.ornithophobia.muppet_death",
+    "sounds": [
+      "ornithophobia:muppet_death"
+    ]
+  },
+  "muppet_angry": {
+    "subtitle": "sounds.ornithophobia.muppet_angry",
+    "sounds": [
+      "ornithophobia:muppet_angry"
+    ]
+  },
+  "uwu": {
+    "sounds": [
+      {
+        "name": "ornithophobia:uwu",
+        "stream": true
+      }
+    ]
   }
 }

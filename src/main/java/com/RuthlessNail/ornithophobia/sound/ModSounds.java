@@ -25,6 +25,28 @@ public class ModSounds {
     public static final RegistryObject<SoundEvent> SPARROW_SWOOP =
             registrySoundEvent("sparrow_swoop");
 
+    public static final RegistryObject<SoundEvent> MUPPET_AMBIENT1 =
+            registrySoundEvent("muppet_ambient1");
+
+    public static final RegistryObject<SoundEvent> MUPPET_AMBIENT2 =
+            registrySoundEvent("muppet_ambient2");
+
+    public static final RegistryObject<SoundEvent> MUPPET_AMBIENT3 =
+            registrySoundEvent("muppet_ambient3");
+
+    public static final RegistryObject<SoundEvent> MUPPET_DEATH =
+            registrySoundEvent("muppet_death");
+
+    public static final RegistryObject<SoundEvent> MUPPET_HURT =
+            registrySoundEvent("muppet_hurt");
+
+    public static final RegistryObject<SoundEvent> MUPPET_ANGRY =
+            registrySoundEvent("muppet_angry");
+
+
+    public static final RegistryObject<SoundEvent> UWU =
+            registrySoundEvent("uwu");
+
     public static void register(IEventBus eventBus){
         SOUND_EVENTS.register(eventBus);
     }
