@@ -1927,7 +1927,8 @@
 						"vector": [0, 0, 0]
 					}
 				}
-			}
+			},
+			"particle_effects": {}
 		}
 	},
 	"geckolib_format_version": 2

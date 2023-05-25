@@ -139,9 +139,13 @@ public class MuppetEntity extends Monster implements IAnimatable {
         }
     }
 
+    @Override
+    public int getCurrentSwingDuration() {
+        return 20;
+    }
 
     private <E extends IAnimatable> PlayState predicate(AnimationEvent<E> event) {
-        if (event.isMoving()) {
+        if (event.isMoving() && !this.swinging) {
             if (this.getEntityData().get(ANGERED)) {
                 event.getController().setAnimation(new AnimationBuilder().addAnimation("animation.muppet.run", LOOP));
                 return PlayState.CONTINUE;}
@@ -149,19 +153,20 @@ public class MuppetEntity extends Monster implements IAnimatable {
             event.getController().setAnimation(new AnimationBuilder().addAnimation("animation.muppet.walk", LOOP));
             return PlayState.CONTINUE;
         }
-        event.getController().setAnimation(new AnimationBuilder().addAnimation("animation.muppet.idle", LOOP));
-        return PlayState.CONTINUE;
+        else if(!event.isMoving() && !this.swinging){
+            event.getController().setAnimation(new AnimationBuilder().addAnimation("animation.muppet.idle", LOOP));
+            return PlayState.CONTINUE;
+        }
+        return PlayState.STOP;
     }
 
     private PlayState attackPredicate(AnimationEvent event) {
-        if (this.isAttacking() && event.getController().getAnimationState().equals(AnimationState.Stopped)) {
+        if (this.swinging) {
             event.getController().setAnimation(new AnimationBuilder().addAnimation("animation.muppet.attack", PLAY_ONCE));
-            if (event.getAnimationTick() == 60) {
-                this.setAttacking(false);
-            }
+            return PlayState.CONTINUE;
         }
-
-        return PlayState.CONTINUE;
+    event.getController().markNeedsReload();
+        return PlayState.STOP;
     }
 
     @Override
