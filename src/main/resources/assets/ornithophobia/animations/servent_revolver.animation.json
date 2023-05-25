@@ -73,33 +73,6 @@
 							"vector": [0, 0, 0]
 						}
 					}
-				},
-				"gunfire": {
-					"position": {
-						"0.2083": {
-							"vector": [0, 4, -17]
-						},
-						"0.5": {
-							"vector": [0, 4, -40]
-						}
-					},
-					"scale": {
-						"0.25": {
-							"vector": [1, 1, 0]
-						},
-						"0.2917": {
-							"vector": [1, 1, 1],
-							"easing": "easeOutExpo"
-						},
-						"0.375": {
-							"vector": [1, 1, 1],
-							"easing": "easeOutExpo"
-						},
-						"0.5": {
-							"vector": [0, 0, 1],
-							"easing": "easeInOutQuad"
-						}
-					}
 				}
 			}
 		},
